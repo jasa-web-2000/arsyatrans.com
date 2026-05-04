@@ -280,7 +280,7 @@ $faq = [
           yang membutuhkan kenyamanan, keamanan, dan ketepatan waktu.
         </p>
         <p class="text-slate-600 mb-8 leading-relaxed">
-          Kini, kami bangga menjadi salah satu jasa travel terpercaya yang menghubungkan <?= $brand ?> dengan berbagai
+          Kini, kami bangga menjadi salah satu <a href="https://jasatravel.web.id/" target="_blank" class="underline">jasa travel</a> terpercaya yang menghubungkan <?= $brand ?> dengan berbagai
           kota besar lainnya, dengan tetap mengedepankan pelayanan ramah dan profesional khas daerah kami.
         </p>
         <div class="grid grid-cols-2 gap-6">
@@ -294,7 +294,7 @@ $faq = [
           </div>
         </div>
       </div>
-      <div class="rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+      <div class="rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500">
         <img loading="lazy" src="<?= $img ?>tentang-kami.jpeg" alt="tentang <?= $brand ?>" />
       </div>
     </div>
@@ -339,7 +339,7 @@ $faq = [
       <div>
         <h2 class="text-3xl font-bold mb-6 text-primary">Solusi Perjalanan Praktis</h2>
         <p class="text-slate-600 mb-8 text-lg">
-          Lupakan keramaian terminal. Bersama <?= $brand ?>, perjalanan Anda dimulai tepat di depan pintu rumah Anda.
+          Lupakan keramaian terminal. Bersama <?= $brand ?>, perjalanan Anda dimulai tepat di depan pintu rumah Anda. Kami fokus pada rute Jabodetabek, terutama rute <a href="https://biotrans.id/rute/travel-garut-jakarta/" target="_blank" class="underline">Travel Garut Jakarta</a>.
         </p>
 
         <div class="space-y-6">
