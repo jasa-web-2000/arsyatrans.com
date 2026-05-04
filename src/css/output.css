@@ -470,10 +470,10 @@
     background-color: var(--color-orange-100);
   }
   .bg-primary {
-    background-color: oklch(70.5% 0.213 47.604);
+    background-color: #104590;
   }
   .bg-secondary {
-    background-color: oklch(62.3% 0.214 259.815);
+    background-color: #399fdb;
   }
   .bg-slate-50 {
     background-color: var(--color-slate-50);
@@ -512,7 +512,7 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-secondary {
-    --tw-gradient-from: oklch(62.3% 0.214 259.815);
+    --tw-gradient-from: #399fdb;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .via-black\/20 {
@@ -524,7 +524,7 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
   .to-secondary\/60 {
-    --tw-gradient-to: color-mix(in oklab, oklch(62.3% 0.214 259.815) 60%, transparent);
+    --tw-gradient-to: color-mix(in oklab, #399fdb 60%, transparent);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-transparent {
@@ -658,13 +658,13 @@
     color: var(--color-blue-200);
   }
   .text-primary {
-    color: oklch(70.5% 0.213 47.604);
+    color: #104590;
   }
   .text-primary\/80 {
-    color: color-mix(in oklab, oklch(70.5% 0.213 47.604) 80%, transparent);
+    color: color-mix(in oklab, #104590 80%, transparent);
   }
   .text-secondary {
-    color: oklch(62.3% 0.214 259.815);
+    color: #399fdb;
   }
   .text-slate-300 {
     color: var(--color-slate-300);
@@ -823,14 +823,14 @@
   .hover\:bg-primary {
     &:hover {
       @media (hover: hover) {
-        background-color: oklch(70.5% 0.213 47.604);
+        background-color: #104590;
       }
     }
   }
   .hover\:bg-primary\/80 {
     &:hover {
       @media (hover: hover) {
-        background-color: color-mix(in oklab, oklch(70.5% 0.213 47.604) 80%, transparent);
+        background-color: color-mix(in oklab, #104590 80%, transparent);
       }
     }
   }
@@ -844,7 +844,7 @@
   .hover\:text-primary {
     &:hover {
       @media (hover: hover) {
-        color: oklch(70.5% 0.213 47.604);
+        color: #104590;
       }
     }
   }

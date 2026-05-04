@@ -13,7 +13,7 @@ $desc = $brand . ' adalah travel antar kota dari Tasik Garut Bandung Sumedang ke
 
 $alamat = 'Kab. Garut, Jawa Barat';
 $phone = '+62 895-2679-3728';
-$whatsapp = 'https://wa.me/' . preg_replace('/[^0-9]/', '', $phone) . '?text=Halo+admin+Imas+Travel%0A%0A' . $domain;
+$whatsapp = 'https://wa.me/' . preg_replace('/[^0-9]/', '', $phone) . '?text=Halo+admin+' . $brand . '%0A%0A' . $domain;
 
 $menu = [
   ['Beranda', '#'],
