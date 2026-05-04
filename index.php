@@ -50,6 +50,13 @@ $kekurangan = [
   ],
 ];
 
+$rute = [
+  ['Garut - Jabodetabek', 'garut.webp'],
+  ['Bandung - Jabodetabek', 'bandung.jpg'],
+  ['Sumedang - Jabodetabek', 'sumedang.webp'],
+  ['Tasikmalaya - Jabodetabek', 'tasik.jpg'],
+];
+
 $solusi = [
   [
     'Penjemputan Door-to-Door',
@@ -296,24 +303,27 @@ $faq = [
   <section class="py-20 bg-white scroll-mt-10" id="rute-travel">
     <div class=" max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Rute Terpopuler</h2>
+        <h2 class="text-3xl font-bold mb-4">Rute Travel Terpopuler</h2>
         <p class="text-slate-600"><?= $brand ?> melayani pengantaran door-to-door ke berbagai kota besar setiap hari.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
-          <img loading="lazy" src="<?= $img ?>jakarta.jpg"
-            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Jakarta" />
-          <div
-            class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
-            <h3 class="text-white text-2xl font-bold">Jakarta</h3>
-            <p class="text-slate-300 text-sm mb-4">Majalengka — Jakarta (PP)</p>
-            <div class="flex justify-between items-center">
-              <span class="text-primary/80 font-bold">Mulai Rp 150rb</span>
-              <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full backdrop-blur-md">Setiap Jam</span>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <?php foreach ($rute as $key => $value) : ?>
+          <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+            <img loading="lazy" src="<?= $img . $value[1] ?>"
+              class="brightness-50 group-hover:brightness-75 w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Travel <?= $value[0] ?>" />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+              <h3 class="text-white text-2xl font-bold">Travel <?= explode(' ', $value[0])[0] ?></h3>
+              <p class="text-slate-300 text-sm mb-4"><?= $value[0] ?> (PP)</p>
+              <div class="flex justify-between items-center">
+                <span class="text-primary/80 font-bold">Mulai Rp ⚹⚹⚹ rb</span>
+                <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full backdrop-blur-md">Setiap Hari</span>
+              </div>
             </div>
           </div>
-        </div>
+        <?php endforeach ?>
 
 
       </div>
@@ -413,7 +423,7 @@ $faq = [
     </a>
   </section>
 
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white scroll-mt-10" id="pertanyaan">
     <div class="max-w-3xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Pertanyaan Populer Seputar Travel (FAQ)</h2>
 
@@ -433,7 +443,7 @@ $faq = [
     </div>
   </section>
 
-  <footer class="bg-slate-900 text-white py-12 scroll-mt-10" id="pertanyaan">
+  <footer class="bg-slate-900 text-white py-12">
     <div class=" max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 items-center text-center md:text-left">
       <div>
         <img src="<?= $logo ?>" class="w-16 rounded" loading="lazy" alt="Logo <?= $brand ?>">
