@@ -51,10 +51,10 @@ $kekurangan = [
 ];
 
 $rute = [
-  ['Garut - Jabodetabek', 'garut.webp'],
-  ['Bandung - Jabodetabek', 'bandung.jpg'],
-  ['Sumedang - Jabodetabek', 'sumedang.webp'],
-  ['Tasikmalaya - Jabodetabek', 'tasik.jpg'],
+  ['Garut - Jabodetabek', 'Garut - Bandara Seotta', 'garut.webp'],
+  ['Bandung - Jabodetabek', 'Bandung - Bandara Seotta', 'bandung.jpg'],
+  ['Sumedang - Jabodetabek', 'Sumedang - Bandara Seotta', 'sumedang.webp'],
+  ['Tasikmalaya - Jabodetabek', 'Tasikmalaya - Bandara Seotta', 'tasik.jpg'],
 ];
 
 $solusi = [
@@ -78,12 +78,12 @@ $armada = [
     Reclining Seat.'
   ],
   [
-    'armada-2.jpeg',
+    'armada-2.jpg',
     'Armada 2',
     'Pilihan hemat untuk perjalanan tetap nyaman.'
   ],
   [
-    'armada-3.jpeg',
+    'armada-3.jpg',
     'Armada 3',
     'Dijamin nyaman dan aman.'
   ],
@@ -311,14 +311,15 @@ $faq = [
 
         <?php foreach ($rute as $key => $value) : ?>
           <div class="group relative overflow-hidden rounded-2xl shadow-lg">
-            <img loading="lazy" src="<?= $img . $value[1] ?>"
+            <img loading="lazy" src="<?= $img . $value[2] ?>"
               class="brightness-50 group-hover:brightness-75 w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Travel <?= $value[0] ?>" />
             <div
               class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
               <h3 class="text-white text-2xl font-bold">Travel <?= explode(' ', $value[0])[0] ?></h3>
-              <p class="text-slate-300 text-sm mb-4"><?= $value[0] ?> (PP)</p>
+              <p class="text-slate-300 text-sm my-1"><?= $value[0] ?> (PP)</p>
+              <p class="text-slate-300 text-sm mb-4"><?= $value[1] ?> (PP)</p>
               <div class="flex justify-between items-center">
-                <span class="text-primary/80 font-bold">Mulai Rp ⚹⚹⚹ rb</span>
+                <span class="text-secondary font-bold">Mulai Rp ⚹⚹⚹ rb</span>
                 <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full backdrop-blur-md">Setiap Hari</span>
               </div>
             </div>
@@ -446,7 +447,7 @@ $faq = [
   <footer class="bg-slate-900 text-white py-12">
     <div class=" max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 items-center text-center md:text-left">
       <div>
-        <img src="<?= $logo ?>" class="w-16 rounded" loading="lazy" alt="Logo <?= $brand ?>">
+        <img src="<?= $logo ?>" class="w-16 rounded mx-auto md:mx-0" loading="lazy" alt="Logo <?= $brand ?>">
         <h3 class="text-2xl font-bold my-4"><?= $brand ?></h3>
         <p class="text-slate-400 text-sm">
           <?= $desc ?>
