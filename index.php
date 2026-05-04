@@ -8,8 +8,8 @@ $js = $domain . 'src/js/';
 
 $brand = 'Arsya Trans';
 $logo = $img . 'logo.jpeg';
-$title = $brand . ' Menawarkan Travel ke Jabodetebak';
-$desc = $brand . ' adalah travel antar kota dari Tasik Garut Bandung Sumedang ke Jabodetebak';
+$title = $brand . ' Menawarkan Travel ke Jabodetebak & Bandara Soetta';
+$desc = $brand . ' adalah travel antar kota dari Tasik Garut Bandung Sumedang ke Jabodetebak & Bandara Soetta';
 
 $alamat = 'Kab. Garut, Jawa Barat';
 $phone = '+62 895-2679-3728';
@@ -206,7 +206,7 @@ $faq = [
     </div>
   </nav>
 
-  <section class="py-20 bg-white">
+  <section class="pt-10 md:pt-20 py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
@@ -230,7 +230,7 @@ $faq = [
           </a>
 
           <a href="#rute-travel" class="border border-slate-300 hover:bg-slate-50 px-8 py-4 rounded-xl font-medium transition-all">
-            <i class="fa-regular fa-calendar-days mr-2"></i>Cek Rute
+            <i class="fa-solid fa-road mr-2"></i>Cek Rute
           </a>
         </div>
       </div>
