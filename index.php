@@ -8,8 +8,8 @@ $js = $domain . 'src/js/';
 
 $brand = 'Arsya Trans';
 $logo = $img . 'logo.jpeg';
-$title = $brand . ' Menawarkan Travel ke Jabodetebak & Bandara Soetta';
-$desc = $brand . ' adalah travel antar kota dari Tasik Garut Bandung Sumedang ke Jabodetebak & Bandara Soetta';
+$title = $brand . ' Menawarkan Travel ke Jabodetabek & Bandara Soetta';
+$desc = $brand . ' adalah travel antar kota dari Tasik Garut Bandung Sumedang ke Jabodetabek & Bandara Soetta';
 
 $alamat = 'Kab. Garut, Jawa Barat';
 $phone = '+62 895-2679-3728';
@@ -51,10 +51,10 @@ $kekurangan = [
 ];
 
 $rute = [
-  ['Garut - Jabodetabek', 'Garut - Bandara Seotta', 'garut.webp'],
-  ['Bandung - Jabodetabek', 'Bandung - Bandara Seotta', 'bandung.jpg'],
-  ['Sumedang - Jabodetabek', 'Sumedang - Bandara Seotta', 'sumedang.webp'],
-  ['Tasikmalaya - Jabodetabek', 'Tasikmalaya - Bandara Seotta', 'tasik.jpg'],
+  ['Garut - Jabodetabek', 'Garut - Bandara Soetta', 'garut.webp'],
+  ['Bandung - Jabodetabek', 'Bandung - Bandara Soetta', 'bandung.jpg'],
+  ['Sumedang - Jabodetabek', 'Sumedang - Bandara Soetta', 'sumedang.webp'],
+  ['Tasikmalaya - Jabodetabek', 'Tasikmalaya - Bandara Soetta', 'tasik.jpg'],
 ];
 
 $solusi = [
@@ -139,7 +139,25 @@ $faq = [
 
 <head>
 
-  <!--  -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M4NZZWFD');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <meta name="author" content="Dion Zebua" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -175,6 +193,12 @@ $faq = [
 </head>
 
 <body class="bg-slate-50 text-slate-900 font-inter">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4NZZWFD"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <nav class="bg-white border-b border-slate-100 sticky top-0 z-100">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex justify-between items-center h-20">
